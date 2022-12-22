@@ -11,9 +11,6 @@ public class Main {
 
         Person sam = new Person("Sam", 32);
         sam.displayInfo();
-        Collection<String> collectionA = Arrays.asList("S", "T");
-        Collection<String> collectionB = Arrays.asList("U", "V");
-        System.out.println(collectionA.addAll(collectionB));
     }
 }
 

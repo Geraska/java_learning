@@ -10,19 +10,21 @@ public class Program {
 //        float height =  scan.nextFloat();
 //        display(name, age, height);
 //        System.out.println(fibonachi(8));
-        try{
-            int[] numbers = new int[3];
-            numbers[2]=45;
-            System.out.println(numbers[2]);
-        }
-        catch(Exception ex){
-
-            ex.printStackTrace();
-        }
-        finally{
-            System.out.println("Блок finally");
-        }
-        System.out.println("Программа завершена");
+//        try{
+//            int[] numbers = new int[3];
+//            numbers[2]=45;
+//            System.out.println(numbers[2]);
+//        }
+//        catch(Exception ex){
+//
+//            ex.printStackTrace();
+//        }
+//        finally{
+//            System.out.println("Блок finally");
+//        }
+//        System.out.println("Программа завершена");
+        test jes = new test();
+        System.out.println(jes.ok);
     }
     static int fibonachi(int n){
 

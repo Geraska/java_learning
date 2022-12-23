@@ -3,37 +3,36 @@ import java.util.Collection;
 
 public class Main {
     public static void main(String[] args) {
-        Person tom = new Person();
-        tom.displayInfo();
-
-        Person bob = new Person("Bob");
-        bob.displayInfo();
-
-        Person sam = new Person("Sam", 32);
-        sam.displayInfo();
+        Person kate = new Person("Kate", 30);
+        System.out.println(kate.getAge());      // 30
+        kate.setAge(33);
+        System.out.println(kate.getAge());      // 33
+        kate.setAge(123450);
+        System.out.println(kate.getAge());      // 33
     }
 }
 
 class Person {
-    String name;
-    int age;
-    {
-        name = "Undefined";
-        age = 18;
+
+    private String name;
+    private int age = 1;
+
+    public Person(String name, int age){
+
+        setName(name);
+        setAge(age);
     }
-    Person()
-    {
+    public String getName(){
+        return this.name;
     }
-    Person(String name)
-    {
-        this(name, 18);
-    }
-    Person(String name, int age)
-    {
+    public void setName(String name){
         this.name = name;
-        this.age = age;
     }
-    void displayInfo(){
-        System.out.printf("Name %s \tAge %d\n", name, age);
+    public int getAge(){
+        return this.age;
+    }
+    public void setAge(int age){
+        if(age > 0 && age < 110)
+            this.age = age;
     }
 }
